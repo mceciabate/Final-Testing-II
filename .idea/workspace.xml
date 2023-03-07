@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52ea04fe-3725-4448-a847-c19f2421a694" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Tests/DigitalBookingRefactor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/Base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Base/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/Pages/Page01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Tests/DigitalBookingRefactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Tests/DigitalBookingRefactor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +45,13 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ceci/Desktop/ESPECIALIZACION/bimestre2/Testing II/Clase 8a/digitalTemplate&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ceci/Desktop/grupo-10&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.DigitalBookingRefactor">
+  <component name="RunManager" selected="JUnit.DigitalBookingRefactor.login">
     <configuration name="DigitalBookingRefactor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Template" />
       <extension name="coverage">
@@ -63,6 +63,22 @@
       <option name="PACKAGE_NAME" value="com.Tests" />
       <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingRefactor" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DigitalBookingRefactor.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingRefactor" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,21 +113,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Template" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.Tests.Test01" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="mercadolibre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Template" />
       <extension name="coverage">
@@ -129,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DigitalBookingRefactor.login" />
         <item itemvalue="JUnit.DigitalBookingRefactor" />
         <item itemvalue="JUnit.DigitalHouseLogoClassName" />
         <item itemvalue="JUnit.mercadolibre" />
         <item itemvalue="JUnit.DigitalBookingSearchTest" />
-        <item itemvalue="JUnit.Test01" />
       </list>
     </recent_temporary>
   </component>
