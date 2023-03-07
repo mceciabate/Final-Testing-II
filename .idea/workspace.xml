@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52ea04fe-3725-4448-a847-c19f2421a694" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Tests/DigitalBookingRefactorAnotacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/Tests/DigitalBookingRefactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Tests/DigitalBookingRefactor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.DigitalBookingRefactor.login">
+  <component name="RunManager" selected="JUnit.DigitalBookingRefactorAnotacion">
     <configuration name="DigitalBookingRefactor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Template" />
       <extension name="coverage">
@@ -63,6 +62,37 @@
       <option name="PACKAGE_NAME" value="com.Tests" />
       <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingRefactor" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DigitalBookingRefactorAnotacion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingRefactorAnotacion" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DigitalBookingRefactorAnotacion.testeandoYoutube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Tests" />
+      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingRefactorAnotacion" />
+      <option name="METHOD_NAME" value="testeandoYoutube" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,21 +113,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DigitalBookingSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Template" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingSearchTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DigitalHouseLogoClassName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Template" />
       <extension name="coverage">
@@ -113,28 +128,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mercadolibre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Template" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.Tests.mercadolibre" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DigitalBookingRefactorAnotacion" />
+        <item itemvalue="JUnit.DigitalBookingRefactorAnotacion.testeandoYoutube" />
         <item itemvalue="JUnit.DigitalBookingRefactor.login" />
         <item itemvalue="JUnit.DigitalBookingRefactor" />
         <item itemvalue="JUnit.DigitalHouseLogoClassName" />
-        <item itemvalue="JUnit.mercadolibre" />
-        <item itemvalue="JUnit.DigitalBookingSearchTest" />
       </list>
     </recent_temporary>
   </component>

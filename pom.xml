@@ -16,12 +16,14 @@
         <scope>test</scope>
     </dependency>
       <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools -->
+      <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v86 -->
+<!--      <dependency>-->
+<!--          <groupId>org.seleniumhq.selenium</groupId>-->
+<!--          <artifactId>selenium-devtools-v86</artifactId>-->
+<!--          <version>4.0.0-alpha-7</version>-->
+<!--      </dependency>-->
+
       <dependency>
-          <groupId>org.seleniumhq.selenium</groupId>
-          <artifactId>selenium-devtools</artifactId>
-          <version>4.0.0-beta-3</version>
-      </dependency>
-    	<dependency>
     	<groupId>org.junit.jupiter</groupId>
     	<artifactId>junit-jupiter-engine</artifactId>
     	<version>${junit.juniper.version}</version>
@@ -33,5 +35,11 @@
     	<version>${junit.juniper.version}</version>
    		<scope>test</scope>
 	</dependency>
+      <dependency>
+          <groupId>org.testng</groupId>
+          <artifactId>testng</artifactId>
+          <version>RELEASE</version>
+          <scope>test</scope>
+      </dependency>
   </dependencies>
  </project>
