@@ -3,16 +3,13 @@ package com.Base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class BasePage {
 
     protected static WebDriver driver;
 
 
-    public static void setup() {
+    public static WebDriver setup() {
 //        System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 //        driver = new ChromeDriver();
 //        driver.manage().window().maximize();
@@ -25,6 +22,7 @@ public class BasePage {
         driver = new ChromeDriver(options);
 
 
+        return driver;
     }
 
     public static void url(String URL) {
