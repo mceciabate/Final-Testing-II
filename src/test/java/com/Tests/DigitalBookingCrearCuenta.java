@@ -9,24 +9,24 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.function.BooleanSupplier;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class DigitalBookingCrearCuenta {
     static WebDriver driver;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(3000));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(10000));
 
     @BeforeAll
     static void setUpDriver(){
         System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*", "start-maximized");
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get("http://testing.ctd.academy/registro");
     }
@@ -60,7 +60,7 @@ public class DigitalBookingCrearCuenta {
         apellido.sendKeys(Keys.TAB);
 
         email.clear();
-        email.sendKeys("sarasa@elmail.com");
+        email.sendKeys("elmail2@elmail.com");
         email.sendKeys(Keys.TAB);
 
         password.clear();
