@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52ea04fe-3725-4448-a847-c19f2421a694" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/Tests/DigitalBookingRefactorAnotacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ExtentReport/ExtentFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Tests/DigitalBookingCrearCuentaRefactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Tests/DigitalBookingCrearCuentaRefactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/Base/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/Base/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/Tests/DigitalBookingRefactor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/Tests/DigitalBookingRefactor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/Tests/DigitalBookingRefactorAnotacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/Tests/DigitalBookingRefactorAnotacion.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +54,8 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.DigitalBookingRefactorAnotacion">
-    <configuration name="DigitalBookingRefactor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DigitalBookingCrearCuentaRefactor.crearCuenta">
+    <configuration name="DigitalBookingCrearCuenta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Template" />
       <extension name="coverage">
         <pattern>
@@ -60,13 +64,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingRefactor" />
+      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingCrearCuenta" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DigitalBookingRefactorAnotacion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DigitalBookingCrearCuentaRefactor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Template" />
       <extension name="coverage">
         <pattern>
@@ -75,13 +79,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingRefactorAnotacion" />
+      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingCrearCuentaRefactor" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DigitalBookingRefactorAnotacion.testeandoYoutube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DigitalBookingCrearCuentaRefactor.crearCuenta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Template" />
       <extension name="coverage">
         <pattern>
@@ -90,14 +94,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingRefactorAnotacion" />
-      <option name="METHOD_NAME" value="testeandoYoutube" />
+      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingCrearCuentaRefactor" />
+      <option name="METHOD_NAME" value="crearCuenta" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DigitalBookingRefactor.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DigitalBookingCrearCuentaRefactor.crearCuentaNegativo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Template" />
       <extension name="coverage">
         <pattern>
@@ -106,14 +110,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingRefactor" />
-      <option name="METHOD_NAME" value="login" />
+      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingCrearCuentaRefactor" />
+      <option name="METHOD_NAME" value="crearCuentaNegativo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DigitalHouseLogoClassName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DigitalBookingCrearCuenta.crearCuenta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Template" />
       <extension name="coverage">
         <pattern>
@@ -122,19 +126,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.Tests" />
-      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalHouseLogoClassName" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.Tests.DigitalBookingCrearCuenta" />
+      <option name="METHOD_NAME" value="crearCuenta" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DigitalBookingRefactorAnotacion" />
-        <item itemvalue="JUnit.DigitalBookingRefactorAnotacion.testeandoYoutube" />
-        <item itemvalue="JUnit.DigitalBookingRefactor.login" />
-        <item itemvalue="JUnit.DigitalBookingRefactor" />
-        <item itemvalue="JUnit.DigitalHouseLogoClassName" />
+        <item itemvalue="JUnit.DigitalBookingCrearCuentaRefactor.crearCuenta" />
+        <item itemvalue="JUnit.DigitalBookingCrearCuentaRefactor" />
+        <item itemvalue="JUnit.DigitalBookingCrearCuentaRefactor.crearCuentaNegativo" />
+        <item itemvalue="JUnit.DigitalBookingCrearCuenta" />
+        <item itemvalue="JUnit.DigitalBookingCrearCuenta.crearCuenta" />
       </list>
     </recent_temporary>
   </component>
@@ -159,5 +164,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
