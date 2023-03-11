@@ -11,6 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -20,24 +22,30 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class DigitalBookingCrearCuentaRefactor {
 
 
+    static WebDriver driver;
+    static WebDriverWait wait;
 
 
+
+    @BeforeAll
+    public void setUp(){
+        driver = RegistrationPage.setup();
+        RegistrationPage.url("http://testing.ctd.academy/registro");
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+
+
+    }
 
     @Test
 
     public void crearCuenta(){
-
-        WebDriver driver = RegistrationPage.setup();
-        RegistrationPage.url("http://testing.ctd.academy/registro");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-
 
         ArrayList<WebElement> elementosPresentes = new ArrayList<>();
         elementosPresentes = (ArrayList<WebElement>) RegistrationPage.obtenerElementosFormulario();
 
         wait.until(ExpectedConditions.visibilityOfAllElements(elementosPresentes));
         RegistrationPage.limpiarCampos(elementosPresentes);
-        RegistrationPage.completarCampos("Juan", "Perez", "mail1@mail.com", "123456", "123456");
+        RegistrationPage.completarCampos("Juan", "Perez", "mail2@mail.com", "123456", "123456");
 
         RegistrationPage.enviarForm();
 
@@ -45,6 +53,11 @@ public class DigitalBookingCrearCuentaRefactor {
 
         assertTrue(envioExitoso);
 
+
+    }
+
+    @AfterAll
+    public void salir(){
         RegistrationPage.salir();
     }
 
