@@ -5,6 +5,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +17,8 @@ import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
 import java.util.ArrayList;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
@@ -46,7 +49,7 @@ public class DigitalBookingCrearCuentaRefactor {
         //limpio los campos de los elementos de la lista
         RegistrationPage.limpiarCampos(elementosPresentes);
         //completo los campos
-        RegistrationPage.completarCampos("Juan", "Perez", "mail2@mail.com", "123456", "123456");
+        RegistrationPage.completarCampos("Juan", "Perez", "cecilia1@mail.com", "123456", "123456");
         //submit
         RegistrationPage.enviarForm();
         //espero a que cambie la url y la capturo
@@ -54,6 +57,29 @@ public class DigitalBookingCrearCuentaRefactor {
 
         assertTrue(envioExitoso);
 
+
+    }
+
+    @Test
+    public void crearCuentaNegativo()  {
+        //capturo los elementos en una lista y espero que sean visibles
+        ArrayList<WebElement> elementosPresentes = new ArrayList<>();
+        elementosPresentes = (ArrayList<WebElement>) RegistrationPage.obtenerElementosFormulario();
+        wait.until(ExpectedConditions.visibilityOfAllElements(elementosPresentes));
+        //limpio los campos de los elementos de la lista
+        RegistrationPage.limpiarCampos(elementosPresentes);
+        //completo los campos
+        RegistrationPage.completarCampos("Juan", "Perez", "cecilia0@mail.com", "123456", "123456");
+        //submit
+        RegistrationPage.enviarForm();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("p.form-feedback")));
+
+        WebElement parrafo = RegistrationPage.registroFallido();
+        String envioFallido = parrafo.getText();
+
+
+       assertTrue(envioFallido.contentEquals("Ese email ya se encuentra registrado"));
 
     }
 

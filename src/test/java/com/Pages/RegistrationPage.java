@@ -16,8 +16,9 @@ public class RegistrationPage extends BasePage {
     static WebElement email = driver.findElement(By.id("email"));
     static WebElement password = driver.findElement(By.id("password"));
     static WebElement rePassword = driver.findElement(By.id("repassword"));
-
     static WebElement botonEnviar =driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/form/button"));
+
+
 
 
     public static List<WebElement> obtenerElementosFormulario(){
@@ -44,6 +45,11 @@ public class RegistrationPage extends BasePage {
         email.sendKeys(mail);
         password.sendKeys(contrasenia);
         rePassword.sendKeys(recontrasenia);
+    }
+
+    public static WebElement registroFallido(){
+        WebElement envioFallido = driver.findElement(By.cssSelector("p.form-feedback"));
+        return envioFallido;
     }
 
     public static void enviarForm(){
