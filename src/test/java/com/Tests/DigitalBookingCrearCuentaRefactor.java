@@ -5,20 +5,13 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-
 import java.time.Duration;
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
@@ -45,14 +38,16 @@ public class DigitalBookingCrearCuentaRefactor {
         //capturo los elementos en una lista y espero que sean visibles
         ArrayList<WebElement> elementosPresentes = new ArrayList<>();
         elementosPresentes = (ArrayList<WebElement>) RegistrationPage.obtenerElementosFormulario();
+        /*PAUTA IMPLICITA*/
         wait.until(ExpectedConditions.visibilityOfAllElements(elementosPresentes));
         //limpio los campos de los elementos de la lista
         RegistrationPage.limpiarCampos(elementosPresentes);
         //completo los campos
-        RegistrationPage.completarCampos("Juan", "Perez", "cecilia1@mail.com", "123456", "123456");
+        RegistrationPage.completarCampos("Juan", "Perez", "mariaceciliaabate@mail.com", "123456", "123456");
         //submit
         RegistrationPage.enviarForm();
         //espero a que cambie la url y la capturo
+        /*PAUTA IMPLICITA*/
         boolean envioExitoso = wait.until(ExpectedConditions.urlToBe("http://testing.ctd.academy/registro-exitoso"));
 
         assertTrue(envioExitoso);
@@ -65,6 +60,7 @@ public class DigitalBookingCrearCuentaRefactor {
         //capturo los elementos en una lista y espero que sean visibles
         ArrayList<WebElement> elementosPresentes = new ArrayList<>();
         elementosPresentes = (ArrayList<WebElement>) RegistrationPage.obtenerElementosFormulario();
+        /*PAUTA IMPLICITA*/
         wait.until(ExpectedConditions.visibilityOfAllElements(elementosPresentes));
         //limpio los campos de los elementos de la lista
         RegistrationPage.limpiarCampos(elementosPresentes);
@@ -73,8 +69,10 @@ public class DigitalBookingCrearCuentaRefactor {
         //submit
         RegistrationPage.enviarForm();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("p.form-feedback")));
-
+        //espero hasta que aparezca el texto en el formulario
+        /*PAUTA IMPLICITA*/
+        wait.until(ExpectedConditions.textToBePresentInElement(RegistrationPage.capturarFormulario(), "Ese email ya se encuentra registrado"));
+        //capturo el parrafo y su texto
         WebElement parrafo = RegistrationPage.registroFallido();
         String envioFallido = parrafo.getText();
 

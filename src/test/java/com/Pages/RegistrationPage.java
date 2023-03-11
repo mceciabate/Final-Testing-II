@@ -52,6 +52,11 @@ public class RegistrationPage extends BasePage {
         return envioFallido;
     }
 
+    public static WebElement capturarFormulario(){
+        WebElement formulario = driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/form"));
+        return formulario;
+    }
+
     public static void enviarForm(){
 
         botonEnviar.click();
