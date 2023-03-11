@@ -30,11 +30,6 @@ public class RegistrationPage extends BasePage {
         return lista;
     }
 
-//    public static void completarFormulario(String name, String apellido, String mail, String password){
-//
-//
-//    }
-
 
     public static void limpiarCampos(List<WebElement> lista){
         for (WebElement webElement : lista) {
@@ -52,6 +47,7 @@ public class RegistrationPage extends BasePage {
     }
 
     public static void enviarForm(){
+
         botonEnviar.click();
     }
 

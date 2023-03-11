@@ -39,16 +39,17 @@ public class DigitalBookingCrearCuentaRefactor {
     @Test
 
     public void crearCuenta(){
-
+        //capturo los elementos en una lista y espero que sean visibles
         ArrayList<WebElement> elementosPresentes = new ArrayList<>();
         elementosPresentes = (ArrayList<WebElement>) RegistrationPage.obtenerElementosFormulario();
-
         wait.until(ExpectedConditions.visibilityOfAllElements(elementosPresentes));
+        //limpio los campos de los elementos de la lista
         RegistrationPage.limpiarCampos(elementosPresentes);
+        //completo los campos
         RegistrationPage.completarCampos("Juan", "Perez", "mail2@mail.com", "123456", "123456");
-
+        //submit
         RegistrationPage.enviarForm();
-
+        //espero a que cambie la url y la capturo
         boolean envioExitoso = wait.until(ExpectedConditions.urlToBe("http://testing.ctd.academy/registro-exitoso"));
 
         assertTrue(envioExitoso);
