@@ -34,7 +34,6 @@ public class DigitalBookingCrearCuentaRefactor {
 
 
 
-
     @BeforeAll
     public void setUp(){
         driver = RegistrationPage.setup();
@@ -60,7 +59,7 @@ public class DigitalBookingCrearCuentaRefactor {
         RegistrationPage.limpiarCampos(elementosPresentes);
         //completo los campos
         test.log(Status.PASS, "Se capturan y visualizan los elementos");
-        RegistrationPage.completarCampos("Juan", "Perez", "mariaceciliaabate2@mail.com", "123456", "123456");
+        RegistrationPage.completarCampos("Juan", "Perez", "mariaceciliaabate_0@mail.com", "123456", "123456");
         test.log(Status.PASS, "Se completaron los campos");
         //submit
         RegistrationPage.enviarForm();
@@ -79,7 +78,10 @@ public class DigitalBookingCrearCuentaRefactor {
 
     @Test
     public void crearCuentaNegativo()  {
+        test = report.createTest("Create account fail");
+        test.log(Status.INFO, "INICIA EL TEST");
         //capturo los elementos en una lista y espero que sean visibles
+        test.log(Status.PASS, "Se capturan y visualizan los elementos");
         ArrayList<WebElement> elementosPresentes = new ArrayList<>();
         elementosPresentes = (ArrayList<WebElement>) RegistrationPage.obtenerElementosFormulario();
         /*PAUTA IMPLICITA*/
@@ -89,17 +91,20 @@ public class DigitalBookingCrearCuentaRefactor {
         //completo los campos
         RegistrationPage.completarCampos("Juan", "Perez", "mariaceciliaabate1@mail.com", "123456", "123456");
         //submit
+        test.log(Status.PASS, "Se completaron los campos");
         RegistrationPage.enviarForm();
 
         //espero hasta que aparezca el texto en el formulario
         /*PAUTA IMPLICITA*/
         wait.until(ExpectedConditions.textToBePresentInElement(RegistrationPage.capturarFormulario(), "Ese email ya se encuentra registrado"));
+        test.addScreenCaptureFromPath("../resources/capturas", "creacion_cuenta_fail.jpg" );
         //capturo el parrafo y su texto
         WebElement parrafo = RegistrationPage.registroFallido();
         String envioFallido = parrafo.getText();
 
 
        assertTrue(envioFallido.contentEquals("Ese email ya se encuentra registrado"));
+        test.log(Status.INFO, "se terminó el test");
 
     }
 
