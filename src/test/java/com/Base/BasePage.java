@@ -10,26 +10,28 @@ public class BasePage {
 
 
     public static WebDriver setup() {
-//        System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-//        driver = new ChromeDriver();
-//        driver.manage().window().maximize();
 
         System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         //seteo ChromeOptions para evitar incopatibilidad con la nueva version 111, maximizo la ventana al inicio
         options.addArguments("--remote-allow-origins=*", "start-maximized");
-        //paso estas opciones como argumento cuando instancio el ChromeDriver, reemplaza a window().maximaze()
+        //paso estas opciones como argumento cuando instancio el ChromeDriver, reemplaza a window().maximize()
         driver = new ChromeDriver(options);
-
 
         return driver;
     }
 
     public static void url(String URL) {
+
         driver.get(URL);
     }
 
+    public static void cerrarNavegador(){
+        driver.close();
+    }
+
     public static void salir() {
+
         driver.quit();
     }
 
